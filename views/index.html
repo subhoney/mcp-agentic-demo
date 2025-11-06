@@ -30,34 +30,90 @@
         <section class="agenda-section">
           <h3 class="section-title">📋 Agenda</h3>
           <div class="agenda-grid">
-            <div class="agenda-item">
+            <div class="agenda-item intro-item">
               <div class="time-badge">5-7 mins</div>
               <div class="agenda-content">
                 <h4>1. Introduction</h4>
-                <ul>
-                  <li><strong>What is MCP?</strong></li>
-                  <li>
-                    <strong>Why it matters for Syniti:</strong> Modularity,
-                    reuse, clarity
-                  </li>
-                  <li>
-                    <strong>Agentic AI as a motivating use case:</strong>
-                    <ul>
-                      <li>
-                        Autonomous systems need clear boundaries between logic
-                        and environment
-                      </li>
-                      <li>
-                        MCP enables structured autonomy via model-context
-                        separation
-                      </li>
-                      <li>
-                        Protocols act as governance layers for safe, auditable
-                        behavior
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+                
+                <!-- MCP Architecture Visual -->
+                <div class="visual-section">
+                  <div class="visual-diagram">
+                    <div class="diagram-title">Model Context Protocol Architecture</div>
+                    <div class="mcp-flow">
+                      <div class="mcp-box model-box">
+                        <div class="box-icon">🧠</div>
+                        <div class="box-label">Model</div>
+                        <div class="box-desc">Logic & Capability</div>
+                      </div>
+                      <div class="mcp-arrow">↔️</div>
+                      <div class="mcp-box protocol-box">
+                        <div class="box-icon">📋</div>
+                        <div class="box-label">Protocol</div>
+                        <div class="box-desc">Contract & Interface</div>
+                      </div>
+                      <div class="mcp-arrow">↔️</div>
+                      <div class="mcp-box context-box">
+                        <div class="box-icon">🌍</div>
+                        <div class="box-label">Context</div>
+                        <div class="box-desc">Environment & Data</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Points with Icons -->
+                <div class="intro-points">
+                  <div class="intro-point">
+                    <div class="point-icon">❓</div>
+                    <div class="point-content">
+                      <strong>What is MCP?</strong>
+                      <p>A standardized protocol for AI model-context interaction</p>
+                    </div>
+                  </div>
+
+                  <div class="intro-point">
+                    <div class="point-icon">🎯</div>
+                    <div class="point-content">
+                      <strong>Why it matters for Syniti</strong>
+                      <p>Modularity • Reusability • Clarity</p>
+                    </div>
+                  </div>
+
+                  <div class="intro-point">
+                    <div class="point-icon">🤖</div>
+                    <div class="point-content">
+                      <strong>Agentic AI Use Case</strong>
+                      <div class="use-case-grid">
+                        <div class="use-case-item">
+                          <span class="use-case-bullet">→</span>
+                          <span>Clear boundaries between logic & environment</span>
+                        </div>
+                        <div class="use-case-item">
+                          <span class="use-case-bullet">→</span>
+                          <span>Structured autonomy via separation</span>
+                        </div>
+                        <div class="use-case-item">
+                          <span class="use-case-bullet">→</span>
+                          <span>Governance for safe, auditable behavior</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Official Resources -->
+                <div class="resource-links">
+                  <a href="https://modelcontextprotocol.io" target="_blank" class="resource-link primary-link">
+                    <span class="link-icon">🔗</span>
+                    <span class="link-text">Official MCP Specification</span>
+                    <span class="link-arrow">→</span>
+                  </a>
+                  <a href="https://github.com/modelcontextprotocol" target="_blank" class="resource-link secondary-link">
+                    <span class="link-icon">💻</span>
+                    <span class="link-text">MCP on GitHub</span>
+                    <span class="link-arrow">→</span>
+                  </a>
+                </div>
               </div>
             </div>
 

@@ -359,3 +359,258 @@ body {
 .resources-section {
   animation: fadeIn 0.6s ease-out;
 }
+
+/* Introduction Section Visual Styles */
+.intro-item {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
+}
+
+.visual-section {
+  margin: 25px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.visual-diagram {
+  text-align: center;
+}
+
+.diagram-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--syniti-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.mcp-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.mcp-box {
+  flex: 1;
+  min-width: 140px;
+  max-width: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.mcp-box:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.model-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.protocol-box {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.context-box {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.box-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.box-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.box-desc {
+  font-size: 0.85rem;
+  opacity: 0.95;
+}
+
+.mcp-arrow {
+  font-size: 2rem;
+  color: var(--syniti-primary);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+
+.intro-points {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intro-point {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--syniti-accent);
+}
+
+.intro-point:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(5px);
+}
+
+.point-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.point-content {
+  flex: 1;
+}
+
+.point-content strong {
+  display: block;
+  color: var(--syniti-primary);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.point-content p {
+  color: var(--text-secondary);
+  margin: 5px 0 0 0;
+}
+
+.use-case-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.use-case-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 8px 12px;
+  background: var(--syniti-light);
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.use-case-bullet {
+  color: var(--syniti-accent);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.resource-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.resource-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  flex: 1;
+  min-width: 200px;
+}
+
+.primary-link {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.primary-link:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.secondary-link {
+  background: white;
+  color: var(--syniti-primary);
+  border: 2px solid var(--syniti-primary);
+}
+
+.secondary-link:hover {
+  background: var(--syniti-primary);
+  color: white;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.link-icon {
+  font-size: 1.2rem;
+}
+
+.link-text {
+  flex: 1;
+}
+
+.link-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.resource-link:hover .link-arrow {
+  transform: translateX(5px);
+}
+
+/* Responsive adjustments for intro section */
+@media (max-width: 768px) {
+  .mcp-flow {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mcp-arrow {
+    transform: rotate(90deg);
+  }
+
+  .mcp-box {
+    max-width: 100%;
+  }
+
+  .resource-links {
+    flex-direction: column;
+  }
+
+  .resource-link {
+    min-width: 100%;
+  }
+
+  .intro-point {
+    flex-direction: column;
+    text-align: center;
+  }
+}
