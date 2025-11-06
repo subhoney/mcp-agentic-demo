@@ -261,6 +261,18 @@ body {
   font-weight: 500;
 }
 
+.resource-item a {
+  color: var(--syniti-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.resource-item a:hover {
+  color: var(--syniti-accent);
+  text-decoration: underline;
+}
+
 /* Footer */
 .footer {
   text-align: center;
