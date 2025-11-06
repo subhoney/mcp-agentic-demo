@@ -1,157 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Syniti Lunch & Learn - MCP Servers & Agentic AI</title>
-    <link rel="stylesheet" href="/styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <div class="logo-section">
-                <h1 class="company-name">SYNITI</h1>
-                <div class="event-badge">Lunch & Learn</div>
+      <header class="header">
+        <div class="logo-section">
+          <h1 class="company-name">SYNITI</h1>
+          <div class="event-badge">Lunch & Learn</div>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="welcome-section">
+          <h2 class="welcome-title">Welcome to Today's Session</h2>
+          <h3 class="topic-title">MCP Servers & Agentic AI</h3>
+          <p class="session-intro">
+            Join us as we explore the cutting-edge world of Model Context
+            Protocol (MCP) and Agentic AI systems. Discover how these
+            technologies are revolutionizing how AI applications interact with
+            data and tools.
+          </p>
+        </section>
+
+        <section class="agenda-section">
+          <h3 class="section-title">📋 Agenda</h3>
+          <div class="agenda-grid">
+            <div class="agenda-item">
+              <div class="time-badge">5-7 mins</div>
+              <div class="agenda-content">
+                <h4>1. Introduction</h4>
+                <ul>
+                  <li><strong>What is MCP?</strong></li>
+                  <li>
+                    <strong>Why it matters for Syniti:</strong> Modularity,
+                    reuse, clarity
+                  </li>
+                  <li>
+                    <strong>Agentic AI as a motivating use case:</strong>
+                    <ul>
+                      <li>
+                        Autonomous systems need clear boundaries between logic
+                        and environment
+                      </li>
+                      <li>
+                        MCP enables structured autonomy via model-context
+                        separation
+                      </li>
+                      <li>
+                        Protocols act as governance layers for safe, auditable
+                        behavior
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </header>
 
-        <main class="main-content">
-            <section class="welcome-section">
-                <h2 class="welcome-title">Welcome to Today's Session</h2>
-                <h3 class="topic-title">MCP Servers & Agentic AI</h3>
-                <p class="session-intro">
-                    Join us as we explore the cutting-edge world of Model Context Protocol (MCP) 
-                    and Agentic AI systems. Discover how these technologies are revolutionizing 
-                    how AI applications interact with data and tools.
-                </p>
-            </section>
+            <div class="agenda-item">
+              <div class="time-badge">10-12 mins</div>
+              <div class="agenda-content">
+                <h4>2. Core Concepts</h4>
+                <ul>
+                  <li>
+                    <strong>Model:</strong> Encapsulated logic or capability
+                  </li>
+                  <li>
+                    <strong>Context:</strong> Execution environment,
+                    constraints, assumptions
+                  </li>
+                  <li>
+                    <strong>Protocol:</strong> Contract/interface between model
+                    and context
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-            <section class="agenda-section">
-                <h3 class="section-title">📋 Agenda</h3>
-                <div class="agenda-grid">
-                    <div class="agenda-item">
-                        <div class="time-badge">12:00 - 12:10</div>
-                        <div class="agenda-content">
-                            <h4>Introduction & Welcome</h4>
-                            <p>Overview of today's topics and learning objectives</p>
-                        </div>
-                    </div>
+            <div class="agenda-item">
+              <div class="time-badge">5-7 mins</div>
+              <div class="agenda-content">
+                <h4>3. Installing and Working with MCPs in VSCode</h4>
+                <ul>
+                  <li>
+                    <strong>GitHub:</strong> Cloning MCP-compliant modules or
+                    templates
+                    <ul>
+                      <li>Recommended repo structure</li>
+                      <li>
+                        Branching strategy for model vs. context evolution
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>VSCode Setup:</strong>
+                    <ul>
+                      <li>Extensions: Python, YAML, Docker, GitLens</li>
+                      <li>
+                        Dev containers or virtual environments for context
+                        simulation
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Atlassian Integration:</strong>
+                    <ul>
+                      <li>
+                        Linking MCP modules to Jira PBIs or Confluence
+                        documentation
+                      </li>
+                      <li>
+                        Using Bitbucket Pipelines or GitHub Actions for CI/CD
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Figma:</strong>
+                    <ul>
+                      <li>
+                        Using Figma to define UI/UX context or interaction flows
+                      </li>
+                      <li>
+                        Mapping Figma components to protocol definitions for
+                        front-end agents
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-                    <div class="agenda-item">
-                        <div class="time-badge">12:10 - 12:30</div>
-                        <div class="agenda-content">
-                            <h4>Understanding MCP Servers</h4>
-                            <ul>
-                                <li>What is the Model Context Protocol?</li>
-                                <li>Architecture and core concepts</li>
-                                <li>Real-world use cases</li>
-                                <li>Integration patterns</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="agenda-item">
+              <div class="time-badge">15-20 mins</div>
+              <div class="agenda-content">
+                <h4>4. Live Demo in VSCode</h4>
+                <ul>
+                  <li>Walkthrough of MCP-compliant module</li>
+                  <li>
+                    Show model definition, context binding, protocol enforcement
+                  </li>
+                  <li>Optional: plug-and-play or test harnessing</li>
+                </ul>
+              </div>
+            </div>
 
-                    <div class="agenda-item">
-                        <div class="time-badge">12:30 - 12:50</div>
-                        <div class="agenda-content">
-                            <h4>Agentic AI Deep Dive</h4>
-                            <ul>
-                                <li>What makes AI "agentic"?</li>
-                                <li>Key capabilities and characteristics</li>
-                                <li>Agent architectures and patterns</li>
-                                <li>Tool use and decision-making</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="agenda-item">
+              <div class="time-badge">5-10 mins</div>
+              <div class="agenda-content">
+                <h4>5. Real-World Application</h4>
+                <ul>
+                  <li>FedRAMP modular compliance</li>
+                  <li>Data pipeline orchestration</li>
+                  <li>Cloud-native service decoupling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                    <div class="agenda-item">
-                        <div class="time-badge">12:50 - 13:10</div>
-                        <div class="agenda-content">
-                            <h4>Live Demo & Hands-On Examples</h4>
-                            <ul>
-                                <li>Building a simple MCP server</li>
-                                <li>Creating an agentic AI workflow</li>
-                                <li>Integration demonstration</li>
-                                <li>Best practices and tips</li>
-                            </ul>
-                        </div>
-                    </div>
+        <section class="key-topics-section">
+          <h3 class="section-title">🎯 Key Topics We'll Cover</h3>
+          <div class="topics-grid">
+            <div class="topic-card">
+              <div class="topic-icon">🔌</div>
+              <h4>Model-Context-Protocol</h4>
+              <p>
+                Clear separation between logic (Model), environment (Context), and their contract (Protocol)
+              </p>
+            </div>
+            <div class="topic-card">
+              <div class="topic-icon">🤖</div>
+              <h4>Agentic AI Governance</h4>
+              <p>Using MCP as governance layers for safe, auditable autonomous behavior</p>
+            </div>
+            <div class="topic-card">
+              <div class="topic-icon">🛠️</div>
+              <h4>VSCode & Tooling</h4>
+              <p>Hands-on setup with GitHub, Atlassian, Figma integration patterns</p>
+            </div>
+            <div class="topic-card">
+              <div class="topic-icon">💡</div>
+              <h4>Syniti Applications</h4>
+              <p>FedRAMP compliance, data pipelines, and cloud-native architectures</p>
+            </div>
+          </div>
+        </section>
 
-                    <div class="agenda-item">
-                        <div class="time-badge">13:10 - 13:25</div>
-                        <div class="agenda-content">
-                            <h4>Applications at Syniti</h4>
-                            <ul>
-                                <li>Potential use cases in our ecosystem</li>
-                                <li>Data migration and quality scenarios</li>
-                                <li>Automation opportunities</li>
-                                <li>Future roadmap discussions</li>
-                            </ul>
-                        </div>
-                    </div>
+        <section class="resources-section">
+          <h3 class="section-title">📚 Additional Resources</h3>
+          <div class="resources-list">
+            <div class="resource-item">
+              <span class="resource-icon">📖</span>
+              <span>MCP Official Documentation</span>
+            </div>
+            <div class="resource-item">
+              <span class="resource-icon">💻</span>
+              <span>GitHub Repository with Examples</span>
+            </div>
+            <div class="resource-item">
+              <span class="resource-icon">🎥</span>
+              <span>Session Recording (will be shared post-session)</span>
+            </div>
+            <div class="resource-item">
+              <span class="resource-icon">📝</span>
+              <span>Slide Deck and Notes</span>
+            </div>
+          </div>
+        </section>
+      </main>
 
-                    <div class="agenda-item">
-                        <div class="time-badge">13:25 - 13:45</div>
-                        <div class="agenda-content">
-                            <h4>Q&A and Discussion</h4>
-                            <p>Open floor for questions, ideas, and collaborative discussion</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="key-topics-section">
-                <h3 class="section-title">🎯 Key Topics We'll Cover</h3>
-                <div class="topics-grid">
-                    <div class="topic-card">
-                        <div class="topic-icon">🔌</div>
-                        <h4>MCP Protocol</h4>
-                        <p>Standardized communication between AI models and external systems</p>
-                    </div>
-                    <div class="topic-card">
-                        <div class="topic-icon">🤖</div>
-                        <h4>Agentic Systems</h4>
-                        <p>AI that can plan, reason, and take autonomous actions</p>
-                    </div>
-                    <div class="topic-card">
-                        <div class="topic-icon">🛠️</div>
-                        <h4>Tool Integration</h4>
-                        <p>How AI agents interact with databases, APIs, and tools</p>
-                    </div>
-                    <div class="topic-card">
-                        <div class="topic-icon">💡</div>
-                        <h4>Practical Applications</h4>
-                        <p>Real-world implementations and business value</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="resources-section">
-                <h3 class="section-title">📚 Additional Resources</h3>
-                <div class="resources-list">
-                    <div class="resource-item">
-                        <span class="resource-icon">📖</span>
-                        <span>MCP Official Documentation</span>
-                    </div>
-                    <div class="resource-item">
-                        <span class="resource-icon">💻</span>
-                        <span>GitHub Repository with Examples</span>
-                    </div>
-                    <div class="resource-item">
-                        <span class="resource-icon">🎥</span>
-                        <span>Session Recording (will be shared post-session)</span>
-                    </div>
-                    <div class="resource-item">
-                        <span class="resource-icon">📝</span>
-                        <span>Slide Deck and Notes</span>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <p>Syniti &copy; 2025 | Lunch & Learn Series</p>
-            <p class="footer-tagline">Empowering Data Excellence Through Innovation</p>
-        </footer>
+      <footer class="footer">
+        <p>Syniti &copy; 2025 | Lunch & Learn Series</p>
+        <p class="footer-tagline">
+          Empowering Data Excellence Through Innovation
+        </p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
