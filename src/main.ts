@@ -4,15 +4,15 @@ import { NestExpressApplication } from '@nestjs/platform-express';
 import { join } from 'path';
 
 async function bootstrap() {
-  const app = await NestFactory.create<NestExpressApplication>(AppModule);
-  
-  // Serve static files
-  app.useStaticAssets(join(__dirname, '..', 'public'));
-  app.setBaseViewsDir(join(__dirname, '..', 'views'));
-  app.setViewEngine('html');
-  
-  await app.listen(3000);
-  console.log(`
+    const app = await NestFactory.create<NestExpressApplication>(AppModule);
+
+    // Serve static files
+    app.useStaticAssets(join(__dirname, '..', 'public'));
+    app.setBaseViewsDir(join(__dirname, '..', 'views'));
+    app.setViewEngine('html');
+
+    await app.listen(3000);
+    console.log(`
   ┌─────────────────────────────────────────────────────────┐
   │                                                         │
   │   🚀 Syniti Lunch & Learn Application Started!        │

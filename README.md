@@ -28,11 +28,13 @@ Before running this application, make sure you have:
 ## ▶️ Running the Application
 
 ### Development Mode (with auto-reload)
+
 ```bash
 npm run start:dev
 ```
 
 ### Production Mode
+
 ```bash
 # Build the application
 npm run build
@@ -42,6 +44,7 @@ npm run start:prod
 ```
 
 ### Standard Start
+
 ```bash
 npm start
 ```
@@ -80,6 +83,7 @@ mcp-agentic-demo/
 ### Updating the Agenda
 
 Edit the `views/index.html` file to modify:
+
 - Session times
 - Topics
 - Agenda items
@@ -88,6 +92,7 @@ Edit the `views/index.html` file to modify:
 ### Changing Styles
 
 Edit `public/styles/main.css` to customize:
+
 - Colors (Syniti branding colors are in CSS variables)
 - Layout
 - Animations
