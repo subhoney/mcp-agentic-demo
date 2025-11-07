@@ -41,13 +41,13 @@
                     <div class="diagram-title">The Context Problem</div>
                     <div class="mcp-flow">
                       <div class="mcp-box model-box">
-                        <div class="box-icon">�</div>
+                        <div class="box-icon">🤖</div>
                         <div class="box-label">The Problem</div>
                         <div class="box-desc">AI lacks persistent context</div>
                       </div>
                       <div class="mcp-arrow">→</div>
                       <div class="mcp-box protocol-box">
-                        <div class="box-icon">�</div>
+                        <div class="box-icon">💡</div>
                         <div class="box-label">The Opportunity</div>
                         <div class="box-desc">Better code with context</div>
                       </div>
@@ -137,7 +137,7 @@
                 <div class="core-concepts-grid">
                   <div class="concept-card model-concept">
                     <div class="concept-header">
-                      <div class="concept-icon">�</div>
+                      <div class="concept-icon">🤖</div>
                       <h5>AI Assistant</h5>
                     </div>
                     <div class="concept-body">
@@ -187,7 +187,7 @@
 
                   <div class="concept-card protocol-concept">
                     <div class="concept-header">
-                      <div class="concept-icon">�</div>
+                      <div class="concept-icon">🔌</div>
                       <h5>MCP Server</h5>
                     </div>
                     <div class="concept-body">
@@ -246,6 +246,96 @@
 
                 <!-- Demo Preview -->
                 <div class="demo-preview">
+                  <div class="demo-window">
+                    <div class="window-header">
+                      <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                      </div>
+                      <div class="window-title">
+                        VSCode - AI Writing Code with MCP
+                      </div>
+                    </div>
+                    <div class="window-body">
+                      <div class="demo-steps">
+                        <div class="demo-step">
+                          <div class="step-icon">📋</div>
+                          <div class="step-content">
+                            <h6>Ask AI: "Read Jira ticket PBI-1234"</h6>
+                            <p>MCP queries Atlassian, returns requirements</p>
+                          </div>
+                        </div>
+                        <div class="demo-step">
+                          <div class="step-icon">🎨</div>
+                          <div class="step-content">
+                            <h6>Ask AI: "Check Figma for the UI design"</h6>
+                            <p>MCP fetches design specs, colors, dimensions</p>
+                          </div>
+                        </div>
+                        <div class="demo-step">
+                          <div class="step-icon">🔍</div>
+                          <div class="step-content">
+                            <h6>
+                              Ask AI: "Find similar services in our codebase"
+                            </h6>
+                            <p>AI searches existing patterns via GitHub MCP</p>
+                          </div>
+                        </div>
+                        <div class="demo-step">
+                          <div class="step-icon">📐</div>
+                          <div class="step-content">
+                            <h6>
+                              Ask AI: "Read the architecture doc from
+                              Confluence"
+                            </h6>
+                            <p>MCP retrieves standards and best practices</p>
+                          </div>
+                        </div>
+                        <div class="demo-step">
+                          <div class="step-icon">✨</div>
+                          <div class="step-content">
+                            <h6>Ask AI: "Now write the service"</h6>
+                            <p>AI generates code using ALL gathered context</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- What to Watch For -->
+                <div class="watch-for">
+                  <h6>🔍 Key Things to Watch:</h6>
+                  <div class="watch-points">
+                    <div class="watch-point">
+                      <span class="watch-icon">🎯</span>
+                      <span>Code matches requirements exactly</span>
+                    </div>
+                    <div class="watch-point">
+                      <span class="watch-icon">⚡</span>
+                      <span>Written in seconds, not hours</span>
+                    </div>
+                    <div class="watch-point">
+                      <span class="watch-icon">✅</span>
+                      <span>Fewer hallucinations, more accuracy</span>
+                    </div>
+                    <div class="watch-point">
+                      <span class="watch-icon">🔗</span>
+                      <span>Context from multiple sources combined</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="agenda-item vscode-item">
+              <div class="time-badge">5 mins</div>
+              <div class="agenda-content">
+                <h4>4. Installing and Using MCPs in VSCode</h4>
+
+                <!-- Step-by-step installation -->
+                <div class="installation-steps">
                   <div class="install-step">
                     <div class="step-number">1</div>
                     <div class="step-content">
@@ -345,109 +435,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Old content removed -->
-                <div style="display: none" class="tools-showcase">
-                  <div class="tool-section github-section">
-                    <div class="tool-header">
-                      <div class="tool-icon">
-                        <svg
-                          height="32"
-                          width="32"
-                          viewBox="0 0 16 16"
-                          fill="currentColor"
-                        >
-                          <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-                          ></path>
-                        </svg>
-                      </div>
-                      <h5>GitHub</h5>
-                    </div>
-                    <div class="tool-features">
-                      <div class="feature-item">
-                        <span class="feature-bullet">📦</span>
-                        <span>Clone MCP-compliant modules</span>
-                      </div>
-                      <div class="feature-item">
-                        <span class="feature-bullet">🌿</span>
-                        <span>Branching for model/context evolution</span>
-                      </div>
-                      <div class="feature-item">
-                        <span class="feature-bullet">📁</span>
-                        <span>Recommended repo structure</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tool-section vscode-section">
-                    <div class="tool-header">
-                      <div class="tool-icon">💻</div>
-                      <h5>VSCode Setup</h5>
-                    </div>
-                    <div class="tool-features">
-                      <div class="extensions-grid">
-                        <div class="extension-badge">Python</div>
-                        <div class="extension-badge">YAML</div>
-                        <div class="extension-badge">Docker</div>
-                        <div class="extension-badge">GitLens</div>
-                      </div>
-                      <div class="feature-item">
-                        <span class="feature-bullet">🐳</span>
-                        <span>Dev containers for context simulation</span>
-                      </div>
-                      <div class="feature-item">
-                        <span class="feature-bullet">🔧</span>
-                        <span>Virtual environments</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tool-section atlassian-section">
-                    <div class="tool-header">
-                      <div class="tool-icon">🔷</div>
-                      <h5>Atlassian MCP (Key for Syniti!)</h5>
-                    </div>
-                    <div class="tool-features">
-                      <div class="feature-item">
-                        <span class="feature-bullet">🎫</span>
-                        <span>Read Jira PBIs for requirements</span>
-                      </div>
-                      <div class="feature-item">
-                        <span class="feature-bullet">�</span>
-                        <span>Access Confluence docs & architecture</span>
-                      </div>
-                      <div class="feature-item">
-                        <span class="feature-bullet">🔍</span>
-                        <span>Search historical decisions & patterns</span>
-                      </div>
-                      <div class="feature-item">
-                        <span class="feature-bullet">💬</span>
-                        <span>Add comments & update tickets from AI</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tool-section figma-section">
-                    <div class="tool-header">
-                      <div class="tool-icon">🎨</div>
-                      <h5>Figma MCP</h5>
-                    </div>
-                    <div class="tool-features">
-                      <div class="feature-item">
-                        <span class="feature-bullet">🖼️</span>
-                        <span>Pull UI/UX design specs</span>
-                      </div>
-                      <div class="feature-item">
-                        <span class="feature-bullet">�</span>
-                        <span>Component dimensions & styles</span>
-                      </div>
-                      <div class="feature-item">
-                        <span class="feature-bullet">🎯</span>
-                        <span>AI generates matching components</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
                 <!-- Quick Links -->
                 <div class="tool-links">
@@ -471,96 +458,6 @@
               </div>
             </div>
 
-            <div class="agenda-item vscode-item">
-              <div class="time-badge">5 mins</div>
-              <div class="agenda-content">
-                <h4>4. Installing and Using MCPs in VSCode</h4>
-
-                <!-- Step-by-step installation -->
-                <div class="installation-steps">
-                  <div class="demo-window">
-                    <div class="window-header">
-                      <div class="window-dots">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                      </div>
-                      <div class="window-title">
-                        VSCode - AI Writing Code with MCP
-                      </div>
-                    </div>
-                    <div class="window-body">
-                      <div class="demo-steps">
-                        <div class="demo-step">
-                          <div class="step-icon">�</div>
-                          <div class="step-content">
-                            <h6>Ask AI: "Read Jira ticket PBI-1234"</h6>
-                            <p>MCP queries Atlassian, returns requirements</p>
-                          </div>
-                        </div>
-                        <div class="demo-step">
-                          <div class="step-icon">🎨</div>
-                          <div class="step-content">
-                            <h6>Ask AI: "Check Figma for the UI design"</h6>
-                            <p>MCP fetches design specs, colors, dimensions</p>
-                          </div>
-                        </div>
-                        <div class="demo-step">
-                          <div class="step-icon">�</div>
-                          <div class="step-content">
-                            <h6>
-                              Ask AI: "Find similar services in our codebase"
-                            </h6>
-                            <p>AI searches existing patterns via GitHub MCP</p>
-                          </div>
-                        </div>
-                        <div class="demo-step">
-                          <div class="step-icon">📐</div>
-                          <div class="step-content">
-                            <h6>
-                              Ask AI: "Read the architecture doc from
-                              Confluence"
-                            </h6>
-                            <p>MCP retrieves standards and best practices</p>
-                          </div>
-                        </div>
-                        <div class="demo-step">
-                          <div class="step-icon">✨</div>
-                          <div class="step-content">
-                            <h6>Ask AI: "Now write the service"</h6>
-                            <p>AI generates code using ALL gathered context</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- What to Watch For -->
-                <div class="watch-for">
-                  <h6>🔍 Key Things to Watch:</h6>
-                  <div class="watch-points">
-                    <div class="watch-point">
-                      <span class="watch-icon">🎯</span>
-                      <span>Code matches requirements exactly</span>
-                    </div>
-                    <div class="watch-point">
-                      <span class="watch-icon">⚡</span>
-                      <span>Written in seconds, not hours</span>
-                    </div>
-                    <div class="watch-point">
-                      <span class="watch-icon">✅</span>
-                      <span>Fewer hallucinations, more accuracy</span>
-                    </div>
-                    <div class="watch-point">
-                      <span class="watch-icon">�</span>
-                      <span>Context from multiple sources combined</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div class="agenda-item real-world-item">
               <div class="time-badge">5 mins</div>
               <div class="agenda-content">
@@ -569,7 +466,7 @@
                 <!-- Use Cases Grid -->
                 <div class="use-cases-grid">
                   <div class="use-case-card fedramp-card">
-                    <div class="use-case-icon-large">�</div>
+                    <div class="use-case-icon-large">🚀</div>
                     <h5>Faster Onboarding</h5>
                     <div class="use-case-details">
                       <p>
