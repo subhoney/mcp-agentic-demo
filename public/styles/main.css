@@ -614,3 +614,610 @@ body {
     text-align: center;
   }
 }
+
+/* Section 2: Core Concepts Styles */
+.core-concepts-item {
+  background: linear-gradient(135deg, #ffffff 0%, #fef6fb 100%);
+}
+
+.core-concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.concept-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border-top: 4px solid;
+}
+
+.concept-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.model-concept {
+  border-top-color: #667eea;
+}
+
+.context-concept {
+  border-top-color: #4facfe;
+}
+
+.protocol-concept {
+  border-top-color: #f5576c;
+}
+
+.concept-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.concept-icon {
+  font-size: 2rem;
+}
+
+.concept-header h5 {
+  font-size: 1.3rem;
+  color: var(--syniti-primary);
+  margin: 0;
+}
+
+.concept-definition {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.concept-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.example-tag {
+  background: var(--syniti-light);
+  color: var(--syniti-primary);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.concept-visual {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.code-snippet {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+}
+
+.code-snippet code {
+  display: block;
+  white-space: pre;
+  line-height: 1.6;
+}
+
+.interaction-diagram {
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+.interaction-title {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--syniti-primary);
+  margin-bottom: 20px;
+}
+
+.interaction-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.step-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.flow-arrow {
+  font-size: 1.5rem;
+  color: var(--syniti-accent);
+}
+
+/* Section 3: VSCode & Tools Styles */
+.vscode-item {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+.tools-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.tool-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border-left: 4px solid;
+}
+
+.tool-section:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.github-section {
+  border-left-color: #24292e;
+}
+
+.vscode-section {
+  border-left-color: #007acc;
+}
+
+.atlassian-section {
+  border-left-color: #0052cc;
+}
+
+.figma-section {
+  border-left-color: #f24e1e;
+}
+
+.tool-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.tool-icon {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.tool-header h5 {
+  font-size: 1.2rem;
+  color: var(--syniti-dark);
+  margin: 0;
+}
+
+.tool-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px;
+  background: var(--syniti-light);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.feature-bullet {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.extensions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.extension-badge {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tool-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.tool-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: white;
+  border: 2px solid var(--syniti-accent);
+  color: var(--syniti-primary);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tool-link:hover {
+  background: var(--syniti-accent);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Section 4: Live Demo Styles */
+.demo-item {
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+}
+
+.demo-preview {
+  margin: 25px 0;
+}
+
+.demo-window {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.window-header {
+  background: linear-gradient(180deg, #e8e8e8 0%, #d5d5d5 100%);
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.window-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red {
+  background: #ff5f56;
+}
+
+.dot.yellow {
+  background: #ffbd2e;
+}
+
+.dot.green {
+  background: #27c93f;
+}
+
+.window-title {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 600;
+}
+
+.window-body {
+  padding: 25px;
+  background: #fafafa;
+}
+
+.demo-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.demo-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.demo-step:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(5px);
+}
+
+.optional-step {
+  opacity: 0.8;
+  border: 2px dashed var(--border-color);
+}
+
+.demo-step .step-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.step-content h6 {
+  margin: 0 0 5px 0;
+  color: var(--syniti-primary);
+  font-size: 1rem;
+}
+
+.step-content p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.watch-for {
+  margin-top: 25px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--success);
+}
+
+.watch-for h6 {
+  margin: 0 0 15px 0;
+  color: var(--syniti-primary);
+  font-size: 1.1rem;
+}
+
+.watch-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.watch-point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: var(--syniti-light);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.watch-icon {
+  font-size: 1.3rem;
+}
+
+/* Section 5: Real-World Application Styles */
+.real-world-item {
+  background: linear-gradient(135deg, #ffffff 0%, #fefce8 100%);
+}
+
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.use-case-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border-top: 5px solid;
+}
+
+.use-case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.fedramp-card {
+  border-top-color: #10b981;
+}
+
+.pipeline-card {
+  border-top-color: #3b82f6;
+}
+
+.cloud-card {
+  border-top-color: #8b5cf6;
+}
+
+.agentic-card {
+  border-top-color: #f59e0b;
+}
+
+.use-case-icon-large {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.use-case-card h5 {
+  color: var(--syniti-primary);
+  font-size: 1.2rem;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.use-case-details p {
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.benefit-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.benefit-tag {
+  background: var(--syniti-light);
+  color: var(--syniti-primary);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.use-case-example {
+  margin-top: 15px;
+  padding: 15px;
+  background: var(--syniti-light);
+  border-radius: 8px;
+  border-left: 3px solid var(--syniti-accent);
+}
+
+.example-label {
+  font-weight: 700;
+  color: var(--syniti-primary);
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.example-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.impact-section {
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.impact-section h6 {
+  margin: 0 0 20px 0;
+  color: var(--syniti-primary);
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.impact-metrics {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.metric {
+  text-align: center;
+  padding: 15px;
+  flex: 1;
+  min-width: 120px;
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.metric-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Responsive adjustments for all new sections */
+@media (max-width: 768px) {
+  .core-concepts-grid,
+  .tools-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .use-cases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interaction-flow {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+  }
+
+  .impact-metrics {
+    flex-direction: column;
+  }
+
+  .demo-step {
+    flex-direction: column;
+    text-align: center;
+  }
+}
