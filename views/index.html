@@ -224,8 +224,80 @@
               <div class="agenda-content">
                 <h4>3. Installing and Using MCPs in VSCode</h4>
                 
-                <!-- Tools Grid -->
-                <div class="tools-showcase">
+                <!-- Step-by-step installation -->
+                <div class="installation-steps">
+                  <div class="install-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                      <h5>Open Command Palette</h5>
+                      <p><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Windows)</p>
+                    </div>
+                  </div>
+
+                  <div class="install-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                      <h5>Add MCP Server</h5>
+                      <p>Type: <code class="inline-code">MCP: Add Server...</code></p>
+                    </div>
+                  </div>
+
+                  <div class="install-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                      <h5>Select Server Type</h5>
+                      <p>Choose from recommended servers:</p>
+                      <div class="server-recommendations">
+                        <div class="server-card">
+                          <div class="server-icon">
+                            <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor">
+                              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                          </div>
+                          <div class="server-name">GitHub</div>
+                          <div class="server-desc">Repository access, code search, issues</div>
+                        </div>
+                        <div class="server-card">
+                          <div class="server-icon">🔷</div>
+                          <div class="server-name">Atlassian</div>
+                          <div class="server-desc">Jira tickets, Confluence docs</div>
+                        </div>
+                        <div class="server-card">
+                          <div class="server-icon">🎨</div>
+                          <div class="server-name">Figma</div>
+                          <div class="server-desc">Design files, components, specs</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="install-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                      <h5>Configure Authentication</h5>
+                      <p>Provide API keys or OAuth tokens for each service</p>
+                      <div class="auth-note">
+                        <span class="note-icon">💡</span>
+                        <span>Get tokens from: GitHub Settings → Developer Settings, Atlassian API Tokens, Figma Account Settings</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="install-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                      <h5>Verify Connection</h5>
+                      <p>Test the connection by asking Copilot to query the MCP server</p>
+                      <div class="example-query">
+                        <code>"@github show me recent pull requests"</code><br>
+                        <code>"@atlassian what's in ticket PBI-1234?"</code><br>
+                        <code>"@figma get the design for login page"</code>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Old content removed -->
+                <div style="display:none;" class="tools-showcase">
                   <div class="tool-section github-section">
                     <div class="tool-header">
                       <div class="tool-icon">
@@ -513,44 +585,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="key-topics-section">
-          <h3 class="section-title">🎯 Key Topics We'll Cover</h3>
-          <div class="topics-grid">
-            <div class="topic-card">
-              <div class="topic-icon">🔌</div>
-              <h4>Model-Context-Protocol</h4>
-              <p>
-                Clear separation between logic (Model), environment (Context),
-                and their contract (Protocol)
-              </p>
-            </div>
-            <div class="topic-card">
-              <div class="topic-icon">🤖</div>
-              <h4>Agentic AI Governance</h4>
-              <p>
-                Using MCP as governance layers for safe, auditable autonomous
-                behavior
-              </p>
-            </div>
-            <div class="topic-card">
-              <div class="topic-icon">🛠️</div>
-              <h4>VSCode & Tooling</h4>
-              <p>
-                Hands-on setup with GitHub, Atlassian, Figma integration
-                patterns
-              </p>
-            </div>
-            <div class="topic-card">
-              <div class="topic-icon">💡</div>
-              <h4>Syniti Applications</h4>
-              <p>
-                FedRAMP compliance, data pipelines, and cloud-native
-                architectures
-              </p>
             </div>
           </div>
         </section>
