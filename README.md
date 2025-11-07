@@ -8,6 +8,9 @@ A NestJS web application for the Syniti Lunch & Learn session on Model Context P
 - Detailed session agenda
 - Key topics overview
 - Resources section
+- **Interactive presentation mode with reveal.js**
+- **Slide-by-slide navigation (keyboard and touch)**
+- **Professional slide transitions**
 - Fully responsive design
 - Modern, clean UI with smooth animations
 
@@ -24,6 +27,49 @@ Before running this application, make sure you have:
    ```bash
    npm install
    ```
+
+   This will install:
+   - NestJS framework and dependencies
+   - reveal.js presentation framework (v5.x)
+   - TypeScript and build tools
+
+## 🎥 reveal.js Configuration
+
+This application uses reveal.js to provide an interactive presentation experience.
+
+### Basic Configuration
+
+The reveal.js instance is initialized with the following settings in `views/index.html`:
+
+```javascript
+Reveal.initialize({
+  controls: true,      // Show navigation controls
+  progress: true,      // Show progress bar
+  center: true,        // Center slides vertically
+  hash: true,          // Enable URL hash navigation
+  transition: 'slide'  // Transition style (slide/fade/convex/concave/zoom)
+});
+```
+
+### Navigation
+
+- **Arrow Keys (← →)**: Navigate between slides
+- **Space Bar**: Advance to next slide
+- **ESC**: Toggle overview mode
+- **Touch Gestures**: Swipe left/right on mobile devices
+
+### Static File Serving
+
+The NestJS application is configured to serve reveal.js files from `node_modules`:
+
+```typescript
+// src/main.ts
+app.useStaticAssets(join(__dirname, '..', 'node_modules'), {
+    prefix: '/node_modules/'
+});
+```
+
+This allows reveal.js CSS and JS files to be loaded directly in the browser.
 
 ## ▶️ Running the Application
 
@@ -115,6 +161,7 @@ Edit `public/styles/main.css` to customize:
 ## 🔧 Technology Stack
 
 - **Framework:** NestJS
+- **Presentation:** reveal.js (v5.x)
 - **Runtime:** Node.js
 - **Language:** TypeScript
 - **Template Engine:** HTML
@@ -125,8 +172,26 @@ Edit `public/styles/main.css` to customize:
 
 - The application runs on port 3000 by default
 - All static assets are served from the `public/` directory
+- reveal.js files are served from `node_modules/` directory
 - Views are served from the `views/` directory
 - TypeScript errors shown in the IDE will resolve once dependencies are installed
+- The presentation currently has 2 test slides to verify reveal.js integration
+
+## 🎯 User Story: KYB-16214
+
+This implementation completes **KYB-16214: Setup reveal.js Framework in NestJS Application**
+
+✅ **Acceptance Criteria Met:**
+- reveal.js npm package installed (v5.x)
+- reveal.js initialized with basic configuration
+- Basic slide functionality working (2 test slides)
+- NestJS server structure maintained (no breaking changes)
+- Configuration documented in README
+
+**Next Steps:**
+- Convert full agenda sections into slides (KYB-16215)
+- Implement keyboard and touch navigation (KYB-16216)
+- Add speaker notes integration (KYB-16217)
 
 ## 🤝 Contributing
 
