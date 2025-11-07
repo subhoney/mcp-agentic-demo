@@ -4,10 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Syniti Lunch & Learn - MCP Servers!</title>
+    <!-- reveal.js CSS -->
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css" id="theme" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
-    <div class="container">
+    <!-- reveal.js presentation container -->
+    <div class="reveal">
+      <div class="slides">
+        <!-- Slide 1: Test Slide - Welcome -->
+        <section>
+          <div class="container">
+            <header class="header">
+              <div class="logo-section">
+                <h1 class="company-name">SYNITI</h1>
+                <div class="event-badge">Lunch 'n Learn</div>
+              </div>
+            </header>
+
+            <main class="main-content">
+              <section class="welcome-section">
+                <h2 class="welcome-title">Welcome Synizens!</h2>
+                <h3 class="topic-title">Let's talk about MCP servers!</h3>
+                <p class="session-intro">
+                  Discover how Model Context Protocol (MCP) transforms AI from a
+                  simple autocomplete tool into a context-aware teammate.
+                </p>
+              </section>
+            </main>
+          </div>
+        </section>
+
+        <!-- Slide 2: Test Slide - reveal.js is Working! -->
+        <section>
+          <div class="container">
+            <main class="main-content">
+              <section class="welcome-section">
+                <h2 class="welcome-title">🎉 reveal.js is Working!</h2>
+                <h3 class="topic-title">Basic Setup Complete</h3>
+                <div class="session-intro">
+                  <p><strong>✅ reveal.js installed</strong></p>
+                  <p><strong>✅ Basic configuration initialized</strong></p>
+                  <p><strong>✅ Slide navigation working</strong></p>
+                  <p><strong>✅ NestJS server maintained</strong></p>
+                  <br />
+                  <p>Use arrow keys (← →) to navigate between slides</p>
+                  <p>Press ESC for overview mode</p>
+                </div>
+              </section>
+            </main>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="container" style="display: none;">
+      <!-- Original content preserved for future conversion -->
       <header class="header">
         <div class="logo-section">
           <h1 class="company-name">SYNITI</h1>
@@ -682,5 +737,24 @@
         </p>
       </footer>
     </div>
+
+    <!-- reveal.js JavaScript -->
+    <script src="/node_modules/reveal.js/dist/reveal.js"></script>
+    <script>
+      // Initialize reveal.js with basic configuration
+      Reveal.initialize({
+        // Display settings
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+
+        // Transition settings
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        // plugins: []
+      });
+    </script>
   </body>
 </html>
